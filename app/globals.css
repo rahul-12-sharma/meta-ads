@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --background: #02040a;
+  --foreground: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+/* Premium modern heading font */
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display), sans-serif !important;
+  letter-spacing: -0.02em;
+}
+
+/* Smooth body font */
+p,
+a,
+button,
+input,
+select,
+textarea,
+span,
+li {
+  font-family: var(--font-sans), sans-serif;
+}
